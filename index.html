@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tinh bột nghệ Hằng Huy</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F7EE; --surface:#FFFFFF; --ink:#22301D; --muted:#55624F;
+  --turmeric:#E3A008; --turmeric-deep:#9A6200; --leaf:#4C6B35; --line:#D9DFCB;
+  --hero-bg:#E3A008; --hero-ink:#2A1D00;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#161C13; --surface:#1F2719; --ink:#EEF2E6; --muted:#B4BFA9; --turmeric:#F0B52A; --turmeric-deep:#F0B52A;
+    --leaf:#9DBB82; --line:#33402C; --hero-bg:#C98A00; --hero-ink:#1D1400; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#161C13; --surface:#1F2719; --ink:#EEF2E6; --muted:#B4BFA9; --turmeric:#F0B52A; --turmeric-deep:#F0B52A;
+  --leaf:#9DBB82; --line:#33402C; --hero-bg:#C98A00; --hero-ink:#1D1400; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.65;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--turmeric);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;max-width:1040px;margin:0 auto}
+.brand{font-weight:800;letter-spacing:.2px;text-decoration:none}
+nav a{margin-left:20px;text-decoration:none;font-size:15px;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{background:var(--hero-bg);color:var(--hero-ink);position:relative;overflow:hidden}
+.hero .wrap{padding-top:64px;padding-bottom:84px;position:relative;z-index:1}
+.hero h1{font-size:clamp(40px,8vw,84px);line-height:1.02;margin:0 0 20px;font-weight:800;max-width:11ch}
+.hero p{font-size:clamp(18px,2.4vw,22px);max-width:34ch;margin:0 0 30px}
+.btn{display:inline-block;background:var(--hero-ink);color:#FFF6DC;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none}
+.btn:hover{opacity:.9}
+.sun{position:absolute;right:-120px;top:50%;width:520px;height:520px;transform:translateY(-50%);border-radius:50%;
+  background:radial-gradient(circle at 35% 35%,rgba(255,236,170,.55),rgba(255,236,170,0) 60%);border:2px solid rgba(42,29,0,.18)}
+.sun::after{content:"";position:absolute;inset:70px;border-radius:50%;border:2px solid rgba(42,29,0,.14)}
+section{padding:72px 0}
+h2{font-size:clamp(28px,4.5vw,40px);line-height:1.15;margin:0 0 14px;font-weight:800}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;border-top:2px solid var(--ink)}
+.feat{padding:22px 22px 26px 0}
+.feat h3{margin:0 0 6px;font-size:19px;color:var(--turmeric-deep)}
+.feat p{margin:0;color:var(--muted);font-size:16px}
+.use{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+ol.steps{list-style:none;margin:0;padding:0;display:grid;gap:18px;max-width:640px}
+ol.steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+ol.steps b.n{width:44px;height:44px;border-radius:50%;background:var(--turmeric);color:#2A1D00;display:grid;place-items:center;font-weight:800}
+ol.steps strong{display:block}
+ol.steps span{color:var(--muted);font-size:16px}
+.note{border-left:4px solid var(--leaf);padding:4px 0 4px 18px;color:var(--muted);max-width:62ch}
+.contact dl{display:grid;grid-template-columns:140px 1fr;gap:10px 16px;margin:0;max-width:560px}
+.contact dt{color:var(--muted)}
+.contact dd{margin:0;font-weight:500;overflow-wrap:anywhere}
+footer{padding:30px 0 44px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+@media (max-width:640px){nav{display:none}.sun{opacity:.5;right:-260px}.contact dl{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <header class="top"><a class="brand" href="#">Hằng Huy</a>
+    <nav><a href="#gioi-thieu">Giới thiệu</a><a href="#cach-dung">Cách dùng</a><a href="#lien-he">Liên hệ</a></nav>
+  </header>
+  <div class="sun" aria-hidden="true"></div>
+  <div class="wrap">
+    <h1>Tinh bột nghệ Hằng Huy</h1>
+    <p>Bột nghệ mịn, màu vàng tự nhiên, dùng hằng ngày để chăm sóc sức khỏe cho cả gia đình.</p>
+    <a class="btn" href="#lien-he">Liên hệ đặt mua</a>
+  </div>
+</div>
+
+<main>
+<section id="gioi-thieu">
+  <div class="wrap">
+    <h2>Từ củ nghệ đến hũ bột mịn</h2>
+    <p class="lead">Nghệ được dùng lâu đời trong bữa ăn của người Việt. Tinh bột nghệ Hằng Huy giúp bạn đưa nghệ vào thực đơn mỗi ngày một cách gọn gàng, dễ pha, dễ nấu.</p>
+    <div class="grid">
+      <div class="feat"><h3>Hỗ trợ sức khỏe</h3><p>Nghệ chứa curcumin, hoạt chất được nhiều người dùng đều đặn để bồi bổ và nâng cao thể trạng.</p></div>
+      <div class="feat"><h3>Mịn, dễ hòa tan</h3><p>Bột mịn, dễ khuấy với nước ấm, sữa hoặc mật ong và dễ trộn vào món ăn.</p></div>
+      <div class="feat"><h3>Dùng đa dạng</h3><p>Pha uống, nấu ăn, làm bánh hoặc dùng làm gia vị tạo màu vàng tự nhiên cho món ăn.</p></div>
+      <div class="feat"><h3>Tiện lợi</h3><p>Đóng gói gọn, bảo quản dễ, lấy dùng đúng lượng cần mỗi lần.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="cach-dung" class="use">
+  <div class="wrap">
+    <h2>Cách dùng gợi ý</h2>
+    <p class="lead">Bạn có thể bắt đầu với lượng nhỏ và điều chỉnh theo khẩu vị.</p>
+    <ol class="steps">
+      <li><b class="n">1</b><div><strong>Lấy một lượng vừa đủ</strong><span>Khoảng một thìa cà phê tinh bột nghệ cho một lần dùng.</span></div></li>
+      <li><b class="n">2</b><div><strong>Hòa với nước ấm hoặc sữa</strong><span>Khuấy đều cho tan, thêm mật ong nếu thích vị ngọt nhẹ.</span></div></li>
+      <li><b class="n">3</b><div><strong>Dùng đều đặn</strong><span>Uống sau bữa ăn hoặc trộn vào món ăn hằng ngày.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Lưu ý khi sử dụng</h2>
+    <p class="note">Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp; đậy kín nắp sau khi dùng. Người đang điều trị bệnh, phụ nữ có thai hoặc cho con bú, người dị ứng với nghệ nên hỏi ý kiến bác sĩ trước khi dùng. Sản phẩm là thực phẩm, không phải thuốc và không có tác dụng thay thế thuốc chữa bệnh.</p>
+  </div>
+</section>
+
+<section id="lien-he" class="contact use">
+  <div class="wrap">
+    <h2>Liên hệ Hằng Huy</h2>
+    <p class="lead">Để lại thông tin để được tư vấn và đặt mua.</p>
+    <dl>
+      <dt>Công ty</dt><dd>Công ty Hằng Huy</dd>
+      <dt>Điện thoại</dt><dd>[Điền số điện thoại]</dd>
+      <dt>Email</dt><dd>[Điền địa chỉ email]</dd>
+      <dt>Địa chỉ</dt><dd>[Điền địa chỉ công ty]</dd>
+    </dl>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© Công ty Hằng Huy. Thực phẩm không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh.</div></footer>
+</body>
+</html>
